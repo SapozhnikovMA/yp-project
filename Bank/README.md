@@ -37,20 +37,20 @@
 - Использовать матрицу ошибок для визуального контроля.
 
 ## Лучшая модель RandomForestClassifier (bootstrap=True, class_weight='balanced', criterion='gini', max_depth=9, min_samples_leaf=4, n_estimators=70, random_state=42)
-![image2](https://drive.google.com/file/d/1uZEd4RKaqckLLZbsZEvMnTv7diDfkpay/view?usp=sharing)
-![image3](https://drive.google.com/file/d/1vnTibrb-z6iC2hnaMO_Bgp0_quM2YFNZ/view?usp=sharing)
+![image](https://drive.google.com/file/d/1uZEd4RKaqckLLZbsZEvMnTv7diDfkpay/view?usp=sharing)
+![image](https://drive.google.com/file/d/1vnTibrb-z6iC2hnaMO_Bgp0_quM2YFNZ/view?usp=sharing)
 ### Вывод
 - Использование данной модели очень разнооборазное, мы имеем интервал порогов с высокими метриками f1 и ROC-AUC, они могут сделать модель строгой к отбору класса - 1, либо наоборот увеличивать предсказания класса 1 жертвую точностью, но не сильно, как это было в логистической регрессии;
 - Максимальное значение f1 достигнуто при пороге 0.5-0.54;
 - А ROC_AUC - 0.79 говорить нам, что соотношение класса TPR больше FPR при пороге 0.42 и значении Полноты - 0.773. Данное значение достигнуто при f1 - 0.61.
 
 ### Test
-` RandomForestClassifier (class_weight='balanced')
-F1 = 0.62 | Точность = 0.557, Полнота = 0.705 | ROC-AUC = 0.86 | Accuracy = 0.83
+RandomForestClassifier (class_weight='balanced')
+`F1 = 0.62 | Точность = 0.557, Полнота = 0.705 | ROC-AUC = 0.86 | Accuracy = 0.83
 [[1365  228]
  [ 120  287]]`
-` RandomForestClassifier (downsampled=0.5)
-F1 = 0.61 | Точность = 0.644, Полнота = 0.582 | ROC-AUC = 0.86 | Accuracy = 0.85
+RandomForestClassifier (downsampled=0.5)
+`F1 = 0.61 | Точность = 0.644, Полнота = 0.582 | ROC-AUC = 0.86 | Accuracy = 0.85
 [[1462  131]
  [ 170  237]]`
 
