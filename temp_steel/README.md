@@ -1,6 +1,4 @@
-## Оптимизация энергопотребление при производстве стали.
-![image](https://www.rocta.ru/images/images_article/legirovannaya-stal-chto-ehto-takoe-marki-sostav-vidy-i-primenenie_9.png)
-
+## Оптимизация энергопотребление при производстве стали.  
 ## 
 - data_arc.csv — данные об электродах;
 - data_bulk.csv — данные о подаче сыпучих материалов (объём);
